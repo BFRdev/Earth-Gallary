@@ -5,7 +5,7 @@ import { SliderBox } from 'react-native-image-slider-box';
 
 export default class Sea extends React.Component {
 
-    // regularjs code 
+    // regular js code 
     constructor(props) {
         super(props);
 
