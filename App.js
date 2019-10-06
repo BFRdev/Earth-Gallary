@@ -12,30 +12,19 @@ import Page3 from "./screens/pg3";
 //declare pages to tab bar 
 const myPages = createBottomTabNavigator({
 
-  LAND: {
+  //declare tabs 
+  LAND: { //land page gallary 
     screen: Page1,
-    tabBarOptions: {
-      tabBarLabel: 'Home',
-
-    }
   },
-  SEA: {
+  SEA: {//sea page gallary 
     screen: Page2,
-    tabBarOptions: {
-      tabBarLabel: 'About',
-
-    }
   },
-  SKY: {
+  SKY: { //sky page gallary 
     screen: Page3,
-    tabBarOptions: {
-      tabBarLabel: 'Chat',
-
-    }
   }
 
 },
-  { //tab bar style 
+  { //tab bar style  and opetion 
     tabBarPosition: 'bottom',
     animationEnabled: true,
     tabBarOptions: {
@@ -45,6 +34,7 @@ const myPages = createBottomTabNavigator({
       },
 
     }
+    
   });
 
 export default myPages; 
