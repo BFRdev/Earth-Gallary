@@ -3,7 +3,7 @@
 ## About:
 ### This is an image gallary app. I wanted to do something diffrent and something that we did not cover in class and use a code library to help me develop the image Caracel gallary. The diffent gallaries are categorized in tabs using the createTabBarNavigator. The images are a collection of copywrite free images from unsplach.com of nature. 
 
-### All info on how to use gallary library are here:  https://medium.com/@hamed.taheri32/react-native-image-slider-box-6f18462ab836
+### All info on how to use gallary library are here: https://github.com/archriss/react-native-snap-carousel
 
 ## Install CLI 
 
