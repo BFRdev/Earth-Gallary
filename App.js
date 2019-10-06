@@ -11,7 +11,7 @@ import Page3 from "./screens/pg3";
 //declare pages to tab bar 
 const myPages = createBottomTabNavigator({
 
-  Home: {
+  OCIAN: {
     screen: Page1,
     tabBarOptions: {
       tabBarLabel: 'Home',
@@ -20,7 +20,7 @@ const myPages = createBottomTabNavigator({
       )
     }
   },
-  About: {
+  LAND: {
     screen: Page2,
     tabBarOptions: {
       tabBarLabel: 'About',
@@ -29,7 +29,7 @@ const myPages = createBottomTabNavigator({
       )
     }
   },
-  Chat: {
+  SKY: {
     screen: Page3,
     tabBarOptions: {
       tabBarLabel: 'Chat',
