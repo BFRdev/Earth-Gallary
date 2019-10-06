@@ -14,4 +14,3 @@ export default class Page3 extends React.Component {
         );
     }}
 
-//export default Page3;

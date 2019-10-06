@@ -1,13 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { TabNavigator } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons'
 
+//import pages 
 import Page1 from "./screens/pg1";
 import Page2 from "./screens/pg2";
 import Page3 from "./screens/pg3";
 
-var myPages = TabNavigator({
+//declare pages to tab bar 
+const myPages = createBottomTabNavigator({
+
   Home: {
     screen: Page1,
     tabBarOptions: {
@@ -29,7 +32,7 @@ var myPages = TabNavigator({
   Chat: {
     screen: Page3,
     tabBarOptions: {
-      tabBarLabel: 'Home',
+      tabBarLabel: 'Chat',
       tabBarIcon: ({ tintColor }) => (
         <Icon name="ios-home" size={24} />
       )
@@ -37,11 +40,11 @@ var myPages = TabNavigator({
   }
 
 },
-  {
+  { //tab bar style 
     tabBarPosition: 'bottom',
     animationEnabled: true,
     tabBarOptions: {
-      activeTintColor: 'green',
+    activeTintColor: 'blue',
     }
   });
 

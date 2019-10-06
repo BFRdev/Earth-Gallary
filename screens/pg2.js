@@ -14,4 +14,3 @@ export default class Page2 extends React.Component {
         );
     }}
 
-//export default Page2;
