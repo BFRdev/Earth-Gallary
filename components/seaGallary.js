@@ -34,9 +34,9 @@ export default class Sea extends React.Component {
                 }
                 //gallary style and layout 
                 sliderBoxHeight={1000}
-                dotColor="#FFEE58"
+                dotColor="#fa3939"
                 inaactiveDotColor="white"
-                paginationBoxVerticalPadding={20}
+
 
                 circleLoop
 

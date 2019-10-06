@@ -39,11 +39,11 @@ const myPages = createBottomTabNavigator({
     tabBarPosition: 'bottom',
     animationEnabled: true,
     tabBarOptions: {
-    activeTintColor: 'blue',
-    labelStyle: {
-      fontSize: 20,
-    },
- 
+      activeTintColor: '#fa3939',
+      labelStyle: {
+        fontSize: 20,
+      },
+
     }
   });
 

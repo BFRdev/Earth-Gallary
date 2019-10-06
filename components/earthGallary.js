@@ -28,9 +28,9 @@ export default class Earth extends React.Component {
                 sliderBoxHeight={1000}
                 onCurrentImagePressed={index =>
                     console.warn(`image ${index} pressed`)
-                } 
+                }
                 //dot color, loop and padding 
-                dotColor="#FFEE58"
+                dotColor="#fa3939"
                 inactiveDotColor="white"
                 circleLoop
             />

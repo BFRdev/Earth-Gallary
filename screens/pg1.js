@@ -6,7 +6,6 @@ export default class Page1 extends React.Component {
     render() {
         return (
             <SafeAreaView>
-                {/* <Text>Earth</Text> */}
                 {/* //earth component image gallary  */}
                 <Earth></Earth>
 

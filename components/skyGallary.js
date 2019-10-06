@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { SliderBox } from 'react-native-image-slider-box';
 
 //this is a component for page 3
-export default class Sky extends React.Component{
+export default class Sky extends React.Component {
 
     // regular js code 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             ////array of images using links to save space 
@@ -16,28 +16,28 @@ export default class Sky extends React.Component{
                 'https://bit.ly/335yhTx'
 
             ]
-        }; 
+        };
     }
 
-    render(){
-        return(
+    render() {
+        return (
 
-            <SliderBox 
-            
-            images={this.state.images}
+            <SliderBox
 
-            //current image pressed 
-            onCurrentImagePassed={index =>
-                console.warn(`image ${index} pressed`)
-            }
+                images={this.state.images}
 
-            //gallary style and layout
-            sliderBoxHeight={1000}
-            dotColor="#FFEE58"
-            inaactiveDotColor="white"
+                //current image pressed 
+                onCurrentImagePassed={index =>
+                    console.warn(`image ${index} pressed`)
+                }
 
-            circleLoop
-            
+                //gallary style and layout
+                sliderBoxHeight={1000}
+                dotColor="#fa3939"
+                inaactiveDotColor="white"
+
+                circleLoop
+
             />
 
         );

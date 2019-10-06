@@ -9,7 +9,8 @@ export default class Page3 extends React.Component {
             <SafeAreaView>
                 <Sky></Sky>
             </SafeAreaView>
-            
+
         );
-    }}
+    }
+}
 
