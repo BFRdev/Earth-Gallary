@@ -11,7 +11,7 @@
 
 ### After downloading this repo make sure to '$ npm install' in terminal within the deractory of the file, before nunning the app. 
 
-### To run the project, use the command '$ expo start' withing the projects derectory in terminal. After press the key 'i' to run on the ios simulator, 'a' for android and 'w' for web 
+### To run the project, use the command '$ expo start' within the projects derectory in terminal. After press the key 'i' to run on the ios simulator, 'a' for android and 'w' for web 
 
 
 
