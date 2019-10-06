@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
-import { TabNavigator } from 'react-navigation';
 import { SliderBox } from 'react-native-image-slider-box';
 
 
@@ -9,35 +8,34 @@ export default class Earth extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            //array of images 
             images: [
-                'https://source.unsplash.com/1024x768/?nature',
-                'https://source.unsplash.com/1024x768/?water',
-                'https://source.unsplash.com/1024x768/?girl',
-                'https://source.unsplash.com/1024x768/?tree'
+                'https://bit.ly/330mHJo',
+                'https://bit.ly/31RgDCV',
+                'https://bit.ly/2MhVyuH',
+                'https://bit.ly/2o9O4lD'
             ]
         };
     }
 
-
     render() {
         return (
-            <SafeAreaView>
-                {/* <Text>Earth!</Text> */}
 
-                <SliderBox
+            <SliderBox
+                //images slider, 
+                images={this.state.images}
+                //frame size 
+                sliderBoxHeight={1000}
+                onCurrentImagePressed={index =>
+                    console.warn(`image ${index} pressed`)
+                } 
+                //dot color, loop and padding 
+                dotColor="#FFEE58"
+                inactiveDotColor="white"
+                circleLoop
+            />
 
-                    images={this.state.images}
-                    sliderBoxHeight={1000}
-                    onCurrentImagePressed={index =>
-                        console.warn(`image ${index} pressed`)
-                    }
-                    dotColor="#FFEE58"
-                    inactiveDotColor="black"
-                    paginationBoxVerticalPadding={20}
-                    circleLoop
-                />
 
-            </SafeAreaView>
         );
     }
 }
