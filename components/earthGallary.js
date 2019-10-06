@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { SliderBox } from 'react-native-image-slider-box';
 
+//this is a component for page 1
 
 export default class Earth extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            //array of images 
+            //array of images using links to save space 
             images: [
                 'https://bit.ly/330mHJo',
                 'https://bit.ly/31RgDCV',
