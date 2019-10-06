@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
-import Icon from 'react-native-vector-icons/Ionicons'
+
+//this library was used for gallary https://medium.com/@hamed.taheri32/react-native-image-slider-box-6f18462ab836
 
 //import pages 
 import Page1 from "./screens/pg1";
@@ -15,27 +16,21 @@ const myPages = createBottomTabNavigator({
     screen: Page1,
     tabBarOptions: {
       tabBarLabel: 'Home',
-      tabBarIcon: ({ tintColor }) => (
-        <Icon name="ios-home" size={24} />
-      )
+
     }
   },
   SEA: {
     screen: Page2,
     tabBarOptions: {
       tabBarLabel: 'About',
-      tabBarIcon: ({ tintColor }) => (
-        <Icon name="ios-home" size={24} />
-      )
+
     }
   },
   SKY: {
     screen: Page3,
     tabBarOptions: {
       tabBarLabel: 'Chat',
-      tabBarIcon: ({ tintColor }) => (
-        <Icon name="ios-home" size={24} />
-      )
+
     }
   }
 
@@ -45,6 +40,10 @@ const myPages = createBottomTabNavigator({
     animationEnabled: true,
     tabBarOptions: {
     activeTintColor: 'blue',
+    labelStyle: {
+      fontSize: 20,
+    },
+ 
     }
   });
 
